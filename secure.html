@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ultra Strong Password Generator</title>
+
+    <link rel="stylesheet" type="text/css" href="css/edited_bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styling.css">
+
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Standard Password Generator</a>
+        <a class="navbar-brand" href="secure.html">Ultra Strong Password Generator</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-lg-8 col-sm-12 mx-auto">
+
+                <div class="content">
+                    <h4>Random Password Generator</h4>
+                    <br />
+                    <input type="text" id="display" readonly>
+                    <br />
+                    <input type="range" min="0" max="50" name="slider" id="slider">
+                    <br />
+                    <button onclick="generate()">Generate</button>
+                    <button onclick="copyPassword()">Copy to Clipboard</button>
+                    <div id="length"></div>
+                </div>
+
+                <div class="previous_passwords">
+                    <b>Passwords generated a little bit ago</b>
+                    <br />
+                    <div id="lastNums"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="js/app_secure.js"></script>
+</body>
+</html>
